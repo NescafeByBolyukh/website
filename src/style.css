@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-wrapper {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    height: 646px;
+    width: 100%;
+    background-image: url(../img/zebra1.jpg);
+    background-size: 100% 100%;
+}
+
+.blue-cover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(2, 212, 198, 0.2);
+}
+
+.top-wrapper {
+    height: 85px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-width {
+    height: 100%;
+    width: 1023px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    height: 100%;
+    width: 32%;
+    padding-left: 26px;
+    padding-top: 26px;
+}
+
+.logo-name {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.logo-name-greenpart {
+    color: rgb(6, 181, 169);
+}
+
+.logo-name-graypart {
+    color: rgb(98, 98, 98);
+}
+
+.navigation {
+    height: 100%;
+    width: 43%;
+    display: flex;
+}
+
+.nav-button {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 36px;
+    color: rgb(98, 98, 98);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.basket-wrapper {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 60px;
+    color: rgb(98, 98, 98);
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.basket-price {
+    text-decoration: none;
+    color: rgb(98, 98, 98);
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.nav-hover:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(207, 26, 43);
+    cursor: pointer;
+}
+
+.basket-wrapper:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(207, 26, 43);
+    cursor: pointer;
+}
+
+.basket-wrapper:hover .basket-price {
+    color: rgb(255, 255, 255);
+}
+
+.title-wrapper {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin: 250px auto;
+    text-align: center;
+}
+
+.title-introducing {
+    font-size: 22px;
+    letter-spacing: 30px;
+    font-weight: 100;
+}
+
+.title-wild {
+    font-size: 110px;
+    font-stretch: ultra-condensed;
+    font-weight: 900;
+}
+
+.submenu-wrapper {
+    height: 290px;
+    width: 600px;
+    background-color: rgb(207, 26, 43);
+    color: rgb(255, 255, 255);
+    display: flex;
+
+}
+
+.logo-name-pinkpart {
+    color: rgb(254, 200, 205);
+}
+
+.submenu-tie-picture {
+    height: 77%;
+    width: 100%;
+}
+
+.submenu-tie-picture img {
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid white;
+}
+
+.submenu-logo-wrapper {
+    border-top: 1px solid white;
+    width: 36%;
+    transition: 0.5s;
+}
+
+.submenu-logo {
+    height: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.submenu {
+    border-left: 1px solid white;
+    list-style-type: none;
+    width: 32%;
+    text-align: center;
+    line-height: 34px;
+    border-top: 1px solid white;
+}
+
+.submenu-cover {
+    position: absolute;
+    top: 85px;
+    left: 553px;
+    display: none;
+}
+
+.submenu li {
+    height: 12.5%;
+}
+
+.submenu li:hover {
+    color: rgb(207, 26, 43);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.submenu-logo-wrapper:hover {
+    cursor: pointer;
+}
+
+.tshirt {
+    height: 330px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.tshirt-wrapper {
+    height: 78%;
+    width: 1023px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tshirt-article {
+    height: 100%;
+    width: 24%;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.blue {
+    background-color: rgb(88, 219, 211);
+}
+
+.yellow {
+    background-color: rgb(228, 206, 154);
+}
+
+.pink {
+    background-color: rgb(255, 167, 206);
+}
+
+.orange {
+    background-color: rgb(242, 202, 102);
+    padding: 0;
+}
+
+.blue p:first-child {
+    font-size: 28px;
+}
+
+.blue p:nth-child(2n) {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blue p:nth-child(3n) {
+    font-size: 46px;
+    color: rgb(18, 134, 127);
+}
+
+.shirt-img {
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+}
+
+.yellow p:first-child {
+    font-size: 28px;
+}
+
+.yellow p:nth-child(2n) {
+    font-size: 46px;
+    margin-top: 66px;
+    color: rgb(94, 76, 56);
+}
+
+.pink p:first-child {
+    font-size: 28px;
+}
+
+.pink p:nth-child(2n) {
+    font-size: 20px;
+}
+
+.pink p:nth-child(3n) {
+    font-size: 46px;
+    color: rgb(65, 64, 73);
+    margin-top: 20px;
+}
+
+.percent {
+    font-size: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    transform: scale(1, -1);
+}
+
+.off {
+    font-size: 64px;
+    margin-left: 44px;
+}
+
+.letsgo {
+    color: rgb(242, 202, 102);
+    background-color: white;
+    font-size: 24px;
+    padding: 4px;
+    padding-left: 10px;
+}
+
+.orange div {
+    width: 60%;
+}
+
+.categories {
+    height: 556px;
+    width: 100%;
+}
+
+.categories-wrapper {
+    height: 100%;
+    background-image: url(../img/zebra3.jpg);
+    background-size: cover;
+}
+
+.cat-title-wrapper {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 116px;
+    font-weight: 100;
+    font-family: "HelveticaNeue Thin";
+    line-height: 0.17;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.categories-violete-cover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(94, 65, 153, 0.5);
+}
+
+.cat-catalog-wrapper {
+    width: 100%;
+    max-width: 1280px;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.category {
+    height: 196px;
+    width: 196px;
+    border-radius: 50%;
+    background-color: rgba(104, 222, 215, 0.5);
+    position: absolute;
+}
+
+.cat-catalog-wrapper div:first-child {
+    top: 128px;
+    left: -104px;
+}
+
+.cat-catalog-wrapper div:nth-child(2n) {
+    top: 96px;
+    left: 58px;
+    padding-left: 14px;
+}
+
+.cat-catalog-wrapper div:nth-child(3n) {
+    top: 170px;
+    left: 200px;
+    padding-left: 14px;
+    padding-top: 10px;
+    background-color: rgba(104, 222, 215, 0.85);
+}
+
+.cat-catalog-wrapper div:nth-child(4n) {
+    top: 106px;
+    left: 364px;
+    padding-left: 30px;
+    padding-top: 12px;
+}
+
+.cat-catalog-wrapper div:nth-child(5n) {
+    top: 135px;
+    left: 527px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: rgba(104, 222, 215, 0.85);
+}
+
+.cat-catalog-wrapper div:nth-child(6n) {
+    top: 169px;
+    left: 700px;
+    padding-left: 14px;
+    background-color: rgba(104, 222, 215, 0.5);
+}
+
+.cat-catalog-wrapper div:nth-child(7n) {
+    top: 112px;
+    left: 848px;
+    padding-left: 14px;
+    padding-top: 10px;
+    background-color: rgba(104, 222, 215, 0.85);
+}
+
+.cat-catalog-wrapper div:nth-child(8n) {
+    top: 196px;
+    left: 990px;
+    padding-top: 25px;
+}
+
+.cat-catalog-wrapper div:nth-child(9n) {
+    top: 96px;
+    left: 1122px;
+    background-color: rgba(104, 222, 215, 0.85);
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+.levis {
+    height: 807px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.levis-wrapper {
+    width: 1023px;
+    height: 100%;
+}
+
+.levis-container {
+    width: 1023px;
+    position: relative;
+}
+
+.levis-title {
+    width: 346px;
+    height: 168px;
+    position: absolute;
+    top: -16px;
+    left: 25px;
+}
+
+.levis-title img {
+    height: 100%;
+    width: 100%;
+}
+
+.levis-information-container {
+    height: 60%;
+    display: flex;
+    padding-top: 20px;
+}
+
+.levis-information {
+    padding-top: 180px;
+    padding-left: 60px;
+}
+
+.levis-information h1 {
+    font-size: 50px;
+}
+
+.levis-information p {
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+.add-container {
+    margin-top: 30px;
+    display: flex;
+}
+
+.add-container p {
+    font-size: 36px;
+}
+
+.add-container span {
+    font-weight: bold;
+}
+
+.cart-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 214px;
+    height: 48px;
+    margin-left: 88px;
+    margin-top: 4px;
+    background-color: rgb(207, 26, 43);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.cart-add:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(207, 26, 43);
+    border: 1px solid rgb(207, 26, 43);
+}
+
+.add-text {
+    height: 48px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-text p {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.basket-container {
+    height: 48px;
+    width: 20%;
+    padding-left: 14px;
+    padding-top: 8px;
+    font-size: 26px;
+
+}
+
+.jeans-menu {
+    height: 200px;
+    width: 1023px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jeans-container {
+    width: 17%;
+    height: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.jeans-container p {
+    margin-top: 10px;
+}
+
+.jeans-img {
+    height: 90%;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.jeans-img img {
+    height: 100%;
+    widows: 100%;
+}
+
+.jeans-container:hover .jeans-img {
+    border: 1px solid rgb(207, 26, 43);
+}
+
+.jeans-container:hover {
+    cursor: pointer;
+}
+
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(27, 35, 48);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    height: 100%;
+    width: 1023px;
+    display: flex;
+}
+
+.logo-container,
+.icons-container {
+    height: 100%;
+    width: 50%;
+}
+
+.logo-container {
+    padding: 20px 24px;
+}
+
+.copyright {
+    color: gray;
+}
+
+.icons-container {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons-container i {
+    margin: 28px 24px;
+}
+
+.icons-container i:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) and (max-width: 1279px) {
+    .cat-catalog-wrapper div:first-child {
+        display: none;
+    }
+
+    .cat-catalog-wrapper div:nth-child(2n) {
+        top: 40%;
+        left: -1%;
+    }
+
+    .cat-catalog-wrapper div:nth-child(3n) {
+        top: 24%;
+        left: 13%;
+        padding-left: 14px;
+    }
+
+    .cat-catalog-wrapper div:nth-child(4n) {
+        top: 44%;
+        left: 27%;
+        padding-left: 28px;
+        padding-top: 10px;
+        background-color: rgba(104, 222, 215, 0.85);
+    }
+
+    .cat-catalog-wrapper div:nth-child(5n) {
+        top: 24%;
+        left: 40%;
+        padding-left: 10px;
+        padding-top: 12px;
+    }
+
+    .cat-catalog-wrapper div:nth-child(6n) {
+        top: 33%;
+        left: 55%;
+        padding-left: 20px;
+        background-color: rgba(104, 222, 215, 0.85);
+    }
+
+    .cat-catalog-wrapper div:nth-child(7n) {
+        top: 43%;
+        left: 70%;
+        padding-left: 14px;
+        background-color: rgba(104, 222, 215, 0.5);
+    }
+
+    .cat-catalog-wrapper div:nth-child(8n) {
+        top: 29%;
+        left: 85%;
+        padding-left: 30px;
+        padding-top: 30px;
+        background-color: rgba(104, 222, 215, 0.85);
+    }
+
+    .cat-catalog-wrapper div:nth-child(9n) {
+        display: none;
+    }
+}
+@media screen and (min-width: 1281px) {
+    .cat-catalog-wrapper div:nth-child(9n), .cat-catalog-wrapper div:first-child {
+        display: none;
+    }
+}
